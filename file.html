@@ -1,9 +1,0 @@
-{% extends 'quiz/adminbase.html' %} {% load widget_tweaks %} {% block content %}
-
-ADD COURSE
-
-{%csrf_token%}
-
-Course Name {% render_field courseForm.course_name class="form-control" placeholder="Java" %} Total Question {% render_field courseForm.question_number class="form-control" placeholder="10" %} Total Marks {% render_field courseForm.total_marks class="form-control" placeholder="50" %}
-
-{% endblock content %}
